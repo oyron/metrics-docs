@@ -3,8 +3,8 @@
 ## 1A: Set up development environment and prepare application
 
 ### 1: Fork repo
-* Create fork of https://github.com/oyron/metrics-ws on **Equinor Playground** GitHub organization
-* Prefix repo name with user name (e.g. `oyron-metrics-ws`)
+* Create fork of https://github.com/oyron/monitoring-ws on **Equinor Playground** GitHub organization
+* Prefix repo name with user name (e.g. `oyron-monitoring-ws`)
 * Add a description to the repo
 * Deselect "Copy the main branch only".
 

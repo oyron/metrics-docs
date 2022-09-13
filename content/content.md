@@ -17,7 +17,8 @@
 </style>
 
 #### EDC 2022
-# Metrics and Monitoring Workshop
+# Metrics and Monitoring in Radix
+## 4 hour workshop 🪚🔨
 
 ---
 
@@ -42,8 +43,15 @@
 ---
 ## Disclaimer 🤷‍♂️
 
-- One off workshop
+- One off workshop 🚀
 - I'm not an expert..
+
+---
+
+## The main goals
+
+- learn a little bit about monitoring, Prometheus, Grafana, and Radix
+- have some fun 🥳
 
 -----
 
@@ -68,8 +76,8 @@
 1. Fork GitHub repo to Equinor-Playground GitHub organization
 2. Run GitHub Codespace from the fork
 3. Adapt the sample application
-4. Register your application in Omnia Radix Playground
-5. Trigger a build-deploy job to get your app running
+4. Register the application in Omnia Radix Playground
+5. Trigger a build-deploy job to get the app running
 ---
 ## Let's get started!<br/>
 
