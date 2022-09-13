@@ -15,10 +15,13 @@
     display: block;
   }
 </style>
+<br>
 
 #### EDC 2022
-# Metrics and Monitoring in Radix
-## 4 hour workshop 🪚🔨
+# Metrics and Monitoring in Omnia Radix
+### 4 hour workshop 🪚🔨
+<br><br>
+Slack: #edc22-workshop-monitoring
 
 ---
 
@@ -111,24 +114,15 @@ Sources:
 <!-- .element: style="font-size:0.8em"-->
 
 Note:
-Metrics: low-level measurements from OS, or application level measurements
 Alerting: the responsive component of a monitoring system
-https://grafana.com/docs/grafana/latest/alerting/
 
 ---
 
 ## Purpose
 
-* Make it easier to locate and fix problems in event of an outage (reduced MTTR)
-* Identify trends that could lead to an outage and fix them proactively (increased MTBF)
+* Make it easier to locate and fix problems in event of an outage
+* Identify trends that could lead to an outage and fix them proactively
 * Better understand resource usage, which makes it possible to scale resources more appropriately and avoid resource waste
-
----
-
-## Metric measurement frequency
-
-* Measure to often and it becomes costly to gather, process and store the data. 
-* Measure to seldom and risk not having enough data when trying to identify problems or bottlenecks.
 
 ---
 ## Proactive/Reactive
@@ -146,9 +140,12 @@ Note:
 ---
 ## Methodologies
 
+Note:
+Methodologies for analyzing the performance of a systems
+
 ---
 
-### RED Method
+## RED Method
 
 Based on [The Four Golden Signals](https://sre.google/sre-book/monitoring-distributed-systems/#xref_monitoring_golden-signals) from Google.
 
@@ -156,7 +153,7 @@ RED focuses on the request/transactions/operations that a system/component execu
 
 * **R**ate - Requests per second
 * **E**rrors - Failed requests per second
-* **D**uration - The latency for a request to be completed
+* **D**uration - The time it takes for a request to be completed
 
 Note:
 * RED gives an overview of how your architecture is behaving 
@@ -165,16 +162,13 @@ Note:
 
 ---
 
-### USE Method
+## USE Method
 
 * Utilization - the average time that the resource was busy servicing work
 * Saturation - the degree to which the resource has extra work which it can't service, often queued
 * Errors - the count of error events
 
 USE is better suited for hardware
-
-Note:
-Utilization is usually the easiest to measure, we can easily measure CPU, memory, network and storage/IO utilization in %. Saturation in disk/IO can for example be to measure CPU IOWAIT or linux load averages. Swapping can be a sign of saturation in memory. Dropped packets can be a sign of saturation on the network interface. Errors are usually not available as a metric, but shows up in logs as unstructured text.
 
 -----
 
@@ -242,6 +236,8 @@ https://github.com/oyron/monitoring-docs/blob/main/3-create-dashboard.md
 * PromQL: query language for the Prometheus data model
 * Metrics collection via pull over HTTP
 
+<br>
+
 More information: https://prometheus.io/docs/introduction/overview/
 <!-- .element: style="font-size:0.8em"-->
 
@@ -254,13 +250,11 @@ More information: https://prometheus.io/docs/introduction/overview/
 * Open source analytics and interactive visualization application
 * Provides charts, graphs and alerts
 
+<br>
+
 More information: https://grafana.com/
 <!-- .element: style="font-size:0.8em"-->
 
----
-## Radix monitoring infrastructure
-
-![Radix monitoring infrastructure](/content/images/radix-monitoring-infrastructure.png)
 
 ---
 
@@ -272,9 +266,17 @@ More information: https://grafana.com/
 
 <!-- .element: style="font-size:0.8em"-->
 
+<br>
+
 More information:<br><!-- .element: style="font-size:0.8em"-->
 [Prometheus Data Model](https://prometheus.io/docs/concepts/data_model/)<br><!-- .element: style="font-size:0.8em"-->
 [The Anatomy of a PromQL Query](https://promlabs.com/blog/2020/06/18/the-anatomy-of-a-promql-query)<!-- .element: style="font-size:0.8em"-->
+
+---
+
+## Radix monitoring infrastructure
+
+![Radix monitoring infrastructure](/content/images/radix-monitoring-infrastructure.png)
 
 -----
 
