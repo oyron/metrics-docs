@@ -103,11 +103,11 @@ Sources:
 
 ## Definitions
 
-**Metrics:** Measurements of the state of something. E.g. CPU usage, number of HTTP requests. Typically collected as time-series, with measurements at regular intervals. 
+<span style="color:var(--moss-green)">**Metrics:**</span> Measurements of the state of something. E.g. CPU usage, number of HTTP requests. Typically collected as time-series, with measurements at regular intervals. 
 <!-- .element: style="font-size:0.8em"-->
-**Monitoring** - the process of collecting, aggregating, and analyzing metrics
+<span style="color:var(--moss-green)">**Monitoring:**</span> The process of collecting, aggregating, and analyzing metrics
 <!-- .element: style="font-size:0.8em"-->
-**Alerting** - perform automated actions based on changes in metrics values
+<span style="color:var(--moss-green)">**Alerting:**</span> Perform automated actions based on changes in metrics values
 <!-- .element: style="font-size:0.8em"-->
 
 Note:
@@ -281,7 +281,7 @@ More information: https://grafana.com/
 ---
 * Configure Prometheus in Radix to start collecting metrics from your app
 * Create a Prometheus [counter](https://prometheus.io/docs/concepts/metric_types/#counter) metric
-* Count all requests to the API (except the `/metrics` endpoint)
+* Count all requests to the API
 * Serve the collected metric at the `/metrics` endpoint
 
 ---

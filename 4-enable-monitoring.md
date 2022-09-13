@@ -6,10 +6,10 @@ Tell Prometheus to start collecting metrics for your app component, by setting t
 
 ```yaml
 components:
-- name: app
-  environmentConfig:
-  - environment: single
-    monitoring: true
+  - name: app
+    environmentConfig:
+      - environment: single
+        monitoring: true
 ```
 
 ## 4B: Collect and serve Prometheus metrics in `server.py`

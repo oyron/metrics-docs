@@ -3,7 +3,7 @@
 ### 1: Create a copy of the default dashboard
 
 * Open the default Grafana dashboard for your application, by using the link in the application console page
-* Press share button (to the right of the dashboard title) => export
+* Press share button (to the right of the dashboard title) => export => Save to file
 * In left menu, select Dashboards => Import => Upload JSON file
 * Set a name for your dashboard. Prefix with user name, e.g. OYRON Inventory API
 * Change the UID til an unique id (just change one or two random characters in UID)
@@ -19,7 +19,8 @@
 
 ### 3: Select defaults and save dashboard
 
-* Select namespace "<appname>-single"
+* In the top menu, select the correct app in the Radixapp dropdown
+* In the top menu, select namespace "<appname>-single"
 * Select 5 minute time range
 * Select 5s automatic update interval
 * Save dashboard
