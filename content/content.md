@@ -350,7 +350,8 @@ https://github.com/oyron/monitoring-docs/blob/main/6-additional-metrics.md
 ## Queries
 
 ### \# 2
-```rate(oyron_inventory_request_duration_sum[1m]) / 
+```
+rate(oyron_inventory_request_duration_sum[1m]) /
 rate(oyron_inventory_request_duration_count[1m])
 ```
 
@@ -411,4 +412,3 @@ More info: https://radix.equinor.com/guides/alerting/#configure-alerting-for-com
 
 # That's it 🥳
 
-* Feedback, questions, comments ?
