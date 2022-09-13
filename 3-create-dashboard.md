@@ -31,4 +31,4 @@
 * Run a few queries through the API test client
 * Verify that your dashboard is updated accordingly (after a slight delay)
 
-Back to slides: https://oyron.github.io/metrics-docs/#/4/1
+Back to slides: https://oyron.github.io/monitoring-docs/#/4/1

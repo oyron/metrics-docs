@@ -64,4 +64,4 @@ from prometheus_client import Counter, generate_latest
 ### 6: Verify that the Radix Pipeline job completes successfully
 
 
-Back to slides: https://oyron.github.io/metrics-docs/#/6/2
+Back to slides: https://oyron.github.io/monitoring-docs/#/6/2

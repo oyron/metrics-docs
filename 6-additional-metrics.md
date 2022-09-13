@@ -101,4 +101,4 @@ In this we will utilize the Gauge exported in the previous part
 
 Run the `generate_traffic.py` script and verify that all the panels are displaying data
 
-Back to slides: https://oyron.github.io/metrics-docs/#/8/2
+Back to slides: https://oyron.github.io/monitoring-docs/#/8/2

@@ -65,4 +65,4 @@ To verify that Radix will be able to build and run our Docker container, we'll d
 
 After the first build deploy job for an application, it might take a few minutes before the newly created DNS entries become available.
 
-Back to slides: https://oyron.github.io/metrics-docs/#/1/4
+Back to slides: https://oyron.github.io/monitoring-docs/#/1/4

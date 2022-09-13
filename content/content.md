@@ -73,7 +73,7 @@
 ---
 ## Let's get started!<br/>
 
-https://github.com/oyron/metrics-docs/blob/main/1-prepare-environment.md
+https://github.com/oyron/monitoring-docs/blob/main/1-prepare-environment.md
 
 -----
 
@@ -219,7 +219,7 @@ Utilization is usually the easiest to measure, we can easily measure CPU, memory
 ---
 
 # 🧾 
-https://github.com/oyron/metrics-docs/blob/main/3-create-dashboard.md
+https://github.com/oyron/monitoring-docs/blob/main/3-create-dashboard.md
 
 -----
 
@@ -279,7 +279,7 @@ More information: https://grafana.com/
 ---
 
 # 🧾 
-https://github.com/oyron/metrics-docs/blob/main/4-enable-monitoring.md
+https://github.com/oyron/monitoring-docs/blob/main/4-enable-monitoring.md
 
 -----
 
@@ -298,7 +298,7 @@ Edit existing ingress request panels
 ---
 
 # 🧾 
-https://github.com/oyron/metrics-docs/blob/main/5-add-metrics.md
+https://github.com/oyron/monitoring-docs/blob/main/5-add-metrics.md
 
 ---
 
@@ -335,7 +335,7 @@ sum by (status) (rate(oyron_inventory_request_counter_total{status=~"[45].."}[1m
 ---
 
 # 🧾 
-https://github.com/oyron/metrics-docs/blob/main/6-additional-metrics.md
+https://github.com/oyron/monitoring-docs/blob/main/6-additional-metrics.md
 
 ---
 

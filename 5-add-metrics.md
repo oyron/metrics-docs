@@ -47,4 +47,4 @@ Hint: Prometheus [Instant vector selector](https://prometheus.io/docs/prometheus
 * Edit the "Errors pr second [1m]" panel
 * Use `sum by()()` to aggregate on status
 
-Back to slides: https://oyron.github.io/metrics-docs/#/7/2
+Back to slides: https://oyron.github.io/monitoring-docs/#/7/2
