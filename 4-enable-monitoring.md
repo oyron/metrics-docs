@@ -15,22 +15,22 @@ components:
 ## 4B: Collect and serve Prometheus metrics in `server.py`
 
 ### 1: Collect metrics 
-Collect metrics for requests to all paths, except `/metrics`. We choose to create a custom `route` label, containing the matched url, including query params, for aggregation and visualization in Grafana.
+Collect metrics for requests to the api (paths starting with `/api`). We choose to create a custom `route` label, containing
+the matched url, for aggregation and visualization in Grafana.
 
 Declare the `request_counter` variable. Place this code after the `app_name` variable.
 ```python
 prefix = app_name.replace("-", "_")
-request_counter = Counter(f'{prefix}_request_counter', 'Requests to inventory backend', ['method', 'route', 'status'])
+request_counter = Counter(f'{prefix}_request_counter', 'Requests to inventory API', ['method', 'route', 'status'])
 ```
 
-Add `after_request()` method in `server.py` before all route definitions:
+Add `after_request_fn()` method in `server.py` before all route definitions:
 
 ```python
 @app.after_request
-def after_request(response):
-    if request.path != "/metrics":
-        route = f'{request.url_rule.rule}?<param>=' if len(request.args) > 0 else request.url_rule.rule
-        request_counter.labels(method=request.method, route=route, status=response.status_code).inc()
+def after_request_fn(response):
+    if request.path.startswith("/api"):
+        request_counter.labels(method=request.method, route=request.url_rule.rule, status=response.status_code).inc()
     return response
 ```
 
