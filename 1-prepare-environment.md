@@ -11,11 +11,12 @@
 ### 2: Create GitHub Codespace
 * Code -> "Create codespace on main"
 * This will create a codespace on a 2-core, 4GB RAM, 32GB storage machine, in Europe West GitHub region, based on the settings in `.devcontainer/devcontainer.json`
-* Open the codespace in the browser or in your local VS Code
+* Open the codespace in your local VS Code (or in the browser if you don't have VS Code)
 
 ### 3: Prepare your Radix config branch
-When we configure the application in Radix, we need to tell Radix from which branch to load the `radixconfig.yaml`
-file. This branch is called the _Radix config branch_. The `radixconfig.yaml` will then define from which branch to build the components (`environments - build - from`). As we move through the steps in this workshop, we will access different git branches to load prepared code. To avoid having to update the Radix config branch to build from different branches, we will instead use a designated branch for Radix config and source code. We will update this branch with the content from the different stepwise branches.
+When we configure an application in Radix, we need to tell Radix from which branch to load the
+`radixconfig.yaml` file. This branch is called the _Radix config branch_. The `radixconfig.yaml` will
+then define from which branch to build the components (`environments - build - from` in `radixconfig.yaml`). We will create a new branch `radix` and use it as config and source branch.
 
 * Open the codespace embedded terminal 
 * Switch to the "part 1" branch : `git checkout part-1`
