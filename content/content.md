@@ -264,16 +264,17 @@ More information: https://grafana.com/
 
 ---
 
-## TODO: Prometheus metric types
+## Prometheus metric types
 
-- **Counter** a cumulative metric that represents a single monotonically increasing counter whose value can only increase or be reset to zero on restart
-- Gauge
-- Histogram
-- Summary
-- Untyped
+- [**Counter**](https://prometheus.io/docs/concepts/metric_types/#counter) a cumulative metric that represents a single monotonically increasing counter whose value can only increase or be reset to zero on restart 
+- [**Gauge**](https://prometheus.io/docs/concepts/metric_types/#gauge) is a metric that represents a single numerical value that can arbitrarily go up and down 
+- [**Histogram**](https://prometheus.io/docs/concepts/metric_types/#histogram) samples observations (usually things like request durations or response sizes) and counts them in configurable buckets. It also provides a sum of all observed values.
 
-[Prometheus Data Model](https://prometheus.io/docs/concepts/data_model/)
-[The Anatomy of a PromQL Query](https://promlabs.com/blog/2020/06/18/the-anatomy-of-a-promql-query)
+<!-- .element: style="font-size:0.8em"-->
+
+More information:<br><!-- .element: style="font-size:0.8em"-->
+[Prometheus Data Model](https://prometheus.io/docs/concepts/data_model/)<br><!-- .element: style="font-size:0.8em"-->
+[The Anatomy of a PromQL Query](https://promlabs.com/blog/2020/06/18/the-anatomy-of-a-promql-query)<!-- .element: style="font-size:0.8em"-->
 
 -----
 
