@@ -276,7 +276,7 @@ More information:<br><!-- .element: style="font-size:0.8em"-->
 
 ## Radix monitoring infrastructure
 
-![Radix monitoring infrastructure](/content/images/radix-monitoring-infrastructure.png)
+![Radix monitoring infrastructure](content/images/radix-monitoring-infrastructure.png)
 
 -----
 
