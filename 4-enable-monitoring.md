@@ -61,7 +61,8 @@ from prometheus_client import Counter, generate_latest
 
 ### 5: Commit and push to branch `radix` to trigger build & deploy
 
-### 6: Verify that the Radix Pipeline job completes successfully
+* Verify that the Radix Pipeline job completes successfully
+* Check the application log in Radix to verify that the `/metrics` endpoint is called by Prometheus
 
 
 Back to slides: https://oyron.github.io/monitoring-docs/#/6/2
